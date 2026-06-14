@@ -1,5 +1,5 @@
 /* ============================================
-   NexaBio Sciences - Advanced CSS
+   VARAA CARES - Advanced CSS
    Premium Dark Theme with Motion Graphics
    ============================================ */
 
@@ -13,9 +13,9 @@
   --bg-card-hover: #101830;
   
   --accent-blue: #00d4ff;
-  --accent-purple: #7B2FFF;
-  --accent-green: #00ffb3;
-  --accent-pink: #ff2d78;
+  --accent-purple: #22c55e;
+  --accent-green: #a3e635;
+  --accent-pink: #4ade80;
   
   --text-primary: #f0f4ff;
   --text-secondary: #8a9bbf;
@@ -24,9 +24,9 @@
   --border-color: rgba(0, 212, 255, 0.12);
   --border-hover: rgba(0, 212, 255, 0.35);
   
-  --gradient-primary: linear-gradient(135deg, #00d4ff, #7B2FFF);
-  --gradient-secondary: linear-gradient(135deg, #00ffb3, #00d4ff);
-  --gradient-glow: radial-gradient(circle at center, rgba(0,212,255,0.15), transparent 70%);
+  --gradient-primary: linear-gradient(135deg, #22c55e, #a3e635);
+  --gradient-secondary: linear-gradient(135deg, #4ade80, #22c55e);
+  --gradient-glow: radial-gradient(circle at center, rgba(34,197,94,0.15), transparent 70%);
   
   --font-main: 'Outfit', sans-serif;
   --font-alt: 'Space Grotesk', sans-serif;
@@ -37,7 +37,7 @@
   --radius-lg: 24px;
   --radius-xl: 40px;
   
-  --shadow-glow: 0 0 30px rgba(0,212,255,0.2);
+  --shadow-glow: 0 0 30px rgba(34,197,94,0.2);
   --shadow-card: 0 8px 40px rgba(0,0,0,0.4);
   --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -74,7 +74,7 @@ body {
 .cursor {
   width: 12px;
   height: 12px;
-  background: var(--accent-blue);
+  background: var(--accent-purple);
   border-radius: 50%;
   position: fixed;
   top: 0; left: 0;
@@ -88,7 +88,7 @@ body {
 .cursor-follower {
   width: 36px;
   height: 36px;
-  border: 1.5px solid rgba(0, 212, 255, 0.5);
+  border: 1.5px solid rgba(34, 197, 94, 0.5);
   border-radius: 50%;
   position: fixed;
   top: 0; left: 0;
@@ -127,8 +127,16 @@ body:hover .cursor { opacity: 1; }
   margin-bottom: 32px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   justify-content: center;
+}
+
+.loader-logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
 }
 
 .logo-text {
@@ -201,6 +209,18 @@ body:hover .cursor { opacity: 1; }
   gap: 32px;
 }
 
+.nav-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover .nav-logo-img {
+  transform: rotate(15deg) scale(1.1);
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -214,7 +234,7 @@ body:hover .cursor { opacity: 1; }
 }
 
 .nav-logo span { font-weight: 400; }
-.nav-logo strong { font-weight: 700; }
+.nav-logo strong { font-weight: 700; color: var(--accent-purple); }
 .nav-logo .logo-icon { display: flex; }
 
 .nav-links {
@@ -240,7 +260,7 @@ body:hover .cursor { opacity: 1; }
 
 .nav-link:hover, .nav-link.active {
   color: var(--text-primary);
-  background: rgba(0,212,255,0.08);
+  background: rgba(34,197,94,0.08);
 }
 
 /* Dropdown */
@@ -288,7 +308,7 @@ body:hover .cursor { opacity: 1; }
 }
 
 .dropdown-item:hover {
-  background: rgba(0,212,255,0.08);
+  background: rgba(34,197,94,0.08);
 }
 
 .di-icon {
@@ -440,12 +460,12 @@ body:hover .cursor { opacity: 1; }
   align-items: center;
   gap: 10px;
   padding: 8px 20px;
-  background: rgba(0,212,255,0.08);
-  border: 1px solid rgba(0,212,255,0.2);
+  background: rgba(34,197,94,0.08);
+  border: 1px solid rgba(34,197,94,0.2);
   border-radius: 100px;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   margin-bottom: 32px;
   animation: fadeInUp 0.8s ease both;
 }
@@ -650,7 +670,7 @@ body:hover .cursor { opacity: 1; }
 .scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, var(--accent-blue), transparent);
+  background: linear-gradient(to bottom, var(--accent-purple), transparent);
   animation: scrollPulse 2s infinite;
 }
 
@@ -658,9 +678,9 @@ body:hover .cursor { opacity: 1; }
    MARQUEE
    ============================================ */
 .marquee-section {
-  background: linear-gradient(90deg, rgba(0,212,255,0.05), rgba(123,47,255,0.05), rgba(0,212,255,0.05));
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(90deg, rgba(34,197,94,0.05), rgba(163,230,53,0.05), rgba(34,197,94,0.05));
+  border-top: 1px solid rgba(34,197,94,0.12);
+  border-bottom: 1px solid rgba(34,197,94,0.12);
   padding: 18px 0;
   overflow: hidden;
 }
@@ -684,7 +704,7 @@ body:hover .cursor { opacity: 1; }
 }
 
 .marquee-content .sep {
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   font-size: 0.6rem;
 }
 
@@ -707,10 +727,10 @@ section { padding: 100px 0; }
 .section-tag {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(0,212,255,0.08);
-  border: 1px solid rgba(0,212,255,0.2);
+  background: rgba(34,197,94,0.08);
+  border: 1px solid rgba(34,197,94,0.2);
   border-radius: 100px;
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -795,7 +815,7 @@ section { padding: 100px 0; }
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
   transform: translateY(-6px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.1);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(34,197,94,0.1);
 }
 
 .product-card:hover .product-card-glow {
@@ -808,18 +828,18 @@ section { padding: 100px 0; }
 
 .icon-bg {
   width: 56px; height: 56px;
-  background: rgba(0,212,255,0.08);
+  background: rgba(34,197,94,0.08);
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
-  border: 1px solid rgba(0,212,255,0.15);
+  border: 1px solid rgba(34,197,94,0.15);
   transition: var(--transition);
 }
 
 .product-card:hover .icon-bg {
-  background: rgba(0,212,255,0.15);
+  background: rgba(34,197,94,0.15);
   transform: scale(1.05) rotate(-5deg);
 }
 
@@ -857,7 +877,7 @@ section { padding: 100px 0; }
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   font-size: 0.7rem;
 }
 
@@ -865,7 +885,7 @@ section { padding: 100px 0; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
@@ -1001,12 +1021,12 @@ section { padding: 100px 0; }
   font-size: 1.4rem;
   width: 48px; height: 48px;
   flex-shrink: 0;
-  background: rgba(0,212,255,0.06);
+  background: rgba(34,197,94,0.06);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0,212,255,0.1);
+  border: 1px solid rgba(34,197,94,0.1);
 }
 
 .about-feature h4 {
@@ -1036,8 +1056,8 @@ section { padding: 100px 0; }
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse at 20% 50%, rgba(0,212,255,0.04), transparent 50%),
-    radial-gradient(ellipse at 80% 50%, rgba(123,47,255,0.06), transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(34,197,94,0.04), transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(163,230,53,0.06), transparent 50%);
   pointer-events: none;
 }
 
@@ -1139,6 +1159,7 @@ section { padding: 100px 0; }
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
   transform: translateY(-4px);
+  border-color: rgba(34,197,94,0.35);
 }
 
 .region-flag { font-size: 2rem; }
@@ -1462,12 +1483,12 @@ section { padding: 100px 0; }
   font-size: 1.3rem;
   width: 44px; height: 44px;
   flex-shrink: 0;
-  background: rgba(0,212,255,0.08);
+  background: rgba(34,197,94,0.08);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0,212,255,0.15);
+  border: 1px solid rgba(34,197,94,0.15);
 }
 
 .contact-item strong {
@@ -1487,7 +1508,7 @@ section { padding: 100px 0; }
   transition: color 0.2s;
 }
 
-.contact-item a:hover { color: var(--accent-blue); }
+.contact-item a:hover { color: var(--accent-purple); }
 
 .social-links {
   display: flex;
@@ -1570,9 +1591,9 @@ section { padding: 100px 0; }
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--accent-blue);
-  background: rgba(0,212,255,0.08);
-  box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
+  border-color: var(--accent-purple);
+  background: rgba(34,197,94,0.08);
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.1);
 }
 
 .form-group input::placeholder,
@@ -1636,11 +1657,11 @@ section { padding: 100px 0; }
 
 .cert-badge {
   padding: 4px 12px;
-  background: rgba(0,212,255,0.06);
-  border: 1px solid rgba(0,212,255,0.15);
+  background: rgba(34,197,94,0.06);
+  border: 1px solid rgba(34,197,94,0.15);
   border-radius: 100px;
   font-size: 0.7rem;
-  color: var(--accent-blue);
+  color: var(--accent-purple);
   font-weight: 600;
 }
 
@@ -1665,7 +1686,7 @@ section { padding: 100px 0; }
 }
 
 .footer-links-col ul li a:hover {
-  color: var(--accent-blue);
+  color: var(--accent-purple);
 }
 
 .footer-contact {
@@ -1686,7 +1707,7 @@ section { padding: 100px 0; }
   transition: color 0.2s;
 }
 
-.footer-contact a:hover { color: var(--accent-blue); }
+.footer-contact a:hover { color: var(--accent-purple); }
 
 .footer-newsletter h5 {
   font-size: 0.82rem;
@@ -1715,7 +1736,7 @@ section { padding: 100px 0; }
 }
 
 .newsletter-form input:focus {
-  border-color: var(--accent-blue);
+  border-color: var(--accent-purple);
 }
 
 .newsletter-form input::placeholder { color: var(--text-muted); }
@@ -1762,7 +1783,7 @@ section { padding: 100px 0; }
   transition: color 0.2s;
 }
 
-.footer-bottom-links a:hover { color: var(--accent-blue); }
+.footer-bottom-links a:hover { color: var(--accent-purple); }
 
 /* ============================================
    FLOATING BUTTONS
@@ -1806,7 +1827,7 @@ section { padding: 100px 0; }
   opacity: 0;
   transform: translateY(20px);
   transition: var(--transition);
-  box-shadow: 0 4px 20px rgba(0,212,255,0.4);
+  box-shadow: 0 4px 20px rgba(34,197,94,0.4);
 }
 
 .back-to-top.visible {
