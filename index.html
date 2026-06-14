@@ -1,871 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NexaBio Sciences — Premier manufacturer and global exporter of advanced water-based emulsions, pressure-sensitive adhesives, and specialty surfactants. Innovating chemistry for a sustainable future.">
-  <meta name="keywords" content="emulsions, adhesives, surfactants, biosciences, chemical manufacturer, water-based emulsions">
+  <meta name="description"
+    content="NexaBio Sciences — Premier manufacturer and global exporter of advanced water-based emulsions, pressure-sensitive adhesives, and specialty surfactants. Innovating chemistry for a sustainable future.">
+  <meta name="keywords"
+    content="emulsions, adhesives, surfactants, biosciences, chemical manufacturer, water-based emulsions">
   <meta property="og:title" content="NexaBio Sciences | Advanced Chemical Solutions">
-  <meta property="og:description" content="Premier manufacturer of water-based emulsions, adhesives, and specialty chemicals.">
+  <meta property="og:description"
+    content="Premier manufacturer of water-based emulsions, adhesives, and specialty chemicals.">
   <title>NexaBio Sciences | Advanced Chemical Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Custom Cursor -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follower" id="cursor-follower"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
 
-<!-- Loader -->
-<div class="loader" id="loader">
-  <div class="loader-inner">
-    <div class="loader-logo">
-      <span class="logo-text">NexaBio</span>
-      <span class="logo-dot"></span>
-    </div>
-    <div class="loader-bar"><div class="loader-fill" id="loader-fill"></div></div>
-    <p class="loader-percent" id="loader-percent">0%</p>
-  </div>
-</div>
-
-<!-- Navbar -->
-<header class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="#" class="nav-logo">
-      <div class="logo-icon">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <circle cx="16" cy="16" r="6" fill="url(#lg1)"/>
-          <circle cx="8" cy="8" r="3" fill="url(#lg2)" opacity="0.7"/>
-          <circle cx="24" cy="8" r="3" fill="url(#lg2)" opacity="0.7"/>
-          <circle cx="8" cy="24" r="3" fill="url(#lg2)" opacity="0.7"/>
-          <circle cx="24" cy="24" r="3" fill="url(#lg2)" opacity="0.7"/>
-          <line x1="11" y1="11" x2="13" y2="13" stroke="url(#lg2)" stroke-width="1.5"/>
-          <line x1="21" y1="11" x2="19" y2="13" stroke="url(#lg2)" stroke-width="1.5"/>
-          <line x1="11" y1="21" x2="13" y2="19" stroke="url(#lg2)" stroke-width="1.5"/>
-          <line x1="21" y1="21" x2="19" y2="19" stroke="url(#lg2)" stroke-width="1.5"/>
-          <defs>
-            <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#00d4ff"/>
-              <stop offset="100%" stop-color="#7B2FFF"/>
-            </linearGradient>
-            <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#00d4ff"/>
-              <stop offset="100%" stop-color="#00ffb3"/>
-            </linearGradient>
-          </defs>
-        </svg>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="logo-text">NexaBio</span>
+        <span class="logo-dot"></span>
       </div>
-      <span>NexaBio<strong>Sciences</strong></span>
-    </a>
+      <div class="loader-bar">
+        <div class="loader-fill" id="loader-fill"></div>
+      </div>
+      <p class="loader-percent" id="loader-percent">0%</p>
+    </div>
+  </div>
 
-    <nav class="nav-links" id="nav-links">
-      <a href="#home" class="nav-link active">Home</a>
-      <div class="nav-dropdown">
-        <a href="#products" class="nav-link">Products <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
-        <div class="dropdown-menu">
-          <div class="dropdown-grid">
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">🧪</div>
-              <div><strong>Paints & Coatings</strong><span>Acrylic & VAM Emulsions</span></div>
-            </a>
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">🏗️</div>
-              <div><strong>Construction</strong><span>Chemical Binders</span></div>
-            </a>
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">🔬</div>
-              <div><strong>Adhesives</strong><span>Pressure Sensitive</span></div>
-            </a>
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">🧵</div>
-              <div><strong>Textile</strong><span>Emulsions & Binders</span></div>
-            </a>
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">⚗️</div>
-              <div><strong>Specialty</strong><span>PVA Homopolymers</span></div>
-            </a>
-            <a href="#" class="dropdown-item">
-              <div class="di-icon">🌿</div>
-              <div><strong>Surfactants</strong><span>Eco-Safe Formulations</span></div>
-            </a>
-          </div>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="6" fill="url(#lg1)" />
+            <circle cx="8" cy="8" r="3" fill="url(#lg2)" opacity="0.7" />
+            <circle cx="24" cy="8" r="3" fill="url(#lg2)" opacity="0.7" />
+            <circle cx="8" cy="24" r="3" fill="url(#lg2)" opacity="0.7" />
+            <circle cx="24" cy="24" r="3" fill="url(#lg2)" opacity="0.7" />
+            <line x1="11" y1="11" x2="13" y2="13" stroke="url(#lg2)" stroke-width="1.5" />
+            <line x1="21" y1="11" x2="19" y2="13" stroke="url(#lg2)" stroke-width="1.5" />
+            <line x1="11" y1="21" x2="13" y2="19" stroke="url(#lg2)" stroke-width="1.5" />
+            <line x1="21" y1="21" x2="19" y2="19" stroke="url(#lg2)" stroke-width="1.5" />
+            <defs>
+              <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00d4ff" />
+                <stop offset="100%" stop-color="#7B2FFF" />
+              </linearGradient>
+              <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00d4ff" />
+                <stop offset="100%" stop-color="#00ffb3" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
-      </div>
-      <a href="#about" class="nav-link">About Us</a>
-      <a href="#global" class="nav-link">Global Presence</a>
-      <a href="#sustainability" class="nav-link">Sustainability</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-
-    <div class="nav-right">
-      <a href="#" class="btn-primary nav-btn">Download Brochure</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <canvas id="particle-canvas"></canvas>
-  <div class="hero-bg-gradient"></div>
-  
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      Trusted by 500+ Industries Worldwide
-    </div>
-    <h1 class="hero-title">
-      <span class="line" data-delay="0">Pioneering</span>
-      <span class="line gradient-text" data-delay="100">Advanced Chemistry</span>
-      <span class="line" data-delay="200">For Tomorrow</span>
-    </h1>
-    <p class="hero-subtitle" data-delay="400">
-      World-class manufacturer of water-based emulsions, pressure-sensitive adhesives,
-      and specialty surfactants. Serving 40+ countries with precision-engineered solutions.
-    </p>
-    <div class="hero-actions" data-delay="600">
-      <a href="#products" class="btn-primary hero-btn">
-        Explore Products
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 5l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>NexaBio<strong>Sciences</strong></span>
       </a>
-      <a href="#about" class="btn-outline">
-        Our Story
-      </a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-num" data-target="25">0</span><span>+</span>
-        <p>Years Experience</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="40">0</span><span>+</span>
-        <p>Countries Served</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="500">0</span><span>+</span>
-        <p>Happy Clients</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="120">0</span><span>+</span>
-        <p>Products Range</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="hero-visual">
-    <div class="molecule-wrapper">
-      <div class="mol-ring mol-ring-1"></div>
-      <div class="mol-ring mol-ring-2"></div>
-      <div class="mol-ring mol-ring-3"></div>
-      <div class="mol-center">
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-          <circle cx="60" cy="60" r="20" fill="url(#mgrad)"/>
-          <circle cx="60" cy="20" r="10" fill="#00d4ff" opacity="0.8"/>
-          <circle cx="100" cy="60" r="10" fill="#7B2FFF" opacity="0.8"/>
-          <circle cx="60" cy="100" r="10" fill="#00ffb3" opacity="0.8"/>
-          <circle cx="20" cy="60" r="10" fill="#00d4ff" opacity="0.8"/>
-          <line x1="60" y1="40" x2="60" y2="30" stroke="url(#lg3)" stroke-width="2"/>
-          <line x1="80" y1="60" x2="90" y2="60" stroke="url(#lg3)" stroke-width="2"/>
-          <line x1="60" y1="80" x2="60" y2="90" stroke="url(#lg3)" stroke-width="2"/>
-          <line x1="40" y1="60" x2="30" y2="60" stroke="url(#lg3)" stroke-width="2"/>
-          <defs>
-            <radialGradient id="mgrad">
-              <stop offset="0%" stop-color="#00d4ff"/>
-              <stop offset="100%" stop-color="#7B2FFF"/>
-            </radialGradient>
-            <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#00d4ff"/>
-              <stop offset="100%" stop-color="#00ffb3"/>
-            </linearGradient>
-          </defs>
-        </svg>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <div class="nav-dropdown">
+          <a href="#products" class="nav-link">Products <svg width="12" height="12" viewBox="0 0 12 12">
+              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">🧪</div>
+                <div><strong>Paints & Coatings</strong><span>Acrylic & VAM Emulsions</span></div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">🏗️</div>
+                <div><strong>Construction</strong><span>Chemical Binders</span></div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">🔬</div>
+                <div><strong>Adhesives</strong><span>Pressure Sensitive</span></div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">🧵</div>
+                <div><strong>Textile</strong><span>Emulsions & Binders</span></div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">⚗️</div>
+                <div><strong>Specialty</strong><span>PVA Homopolymers</span></div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="di-icon">🌿</div>
+                <div><strong>Surfactants</strong><span>Eco-Safe Formulations</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#global" class="nav-link">Global Presence</a>
+        <a href="#sustainability" class="nav-link">Sustainability</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#" class="btn-primary nav-btn">Download Brochure</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="scroll-indicator">
-    <div class="scroll-line"></div>
-    <span>Scroll to explore</span>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-bg-gradient"></div>
 
-<!-- Marquee Banner -->
-<div class="marquee-section">
-  <div class="marquee-track">
-    <div class="marquee-content" id="marquee-content">
-      <span>Paints & Coatings</span>
-      <span class="sep">◆</span>
-      <span>Pressure Sensitive Adhesives</span>
-      <span class="sep">◆</span>
-      <span>Construction Chemicals</span>
-      <span class="sep">◆</span>
-      <span>PVA Homopolymers</span>
-      <span class="sep">◆</span>
-      <span>Textile Emulsions</span>
-      <span class="sep">◆</span>
-      <span>Specialty Surfactants</span>
-      <span class="sep">◆</span>
-      <span>Styrene Acrylic</span>
-      <span class="sep">◆</span>
-      <span>Pure Acrylic Emulsions</span>
-      <span class="sep">◆</span>
-      <span>Paints & Coatings</span>
-      <span class="sep">◆</span>
-      <span>Pressure Sensitive Adhesives</span>
-      <span class="sep">◆</span>
-      <span>Construction Chemicals</span>
-      <span class="sep">◆</span>
-      <span>PVA Homopolymers</span>
-      <span class="sep">◆</span>
-      <span>Textile Emulsions</span>
-      <span class="sep">◆</span>
-      <span>Specialty Surfactants</span>
-      <span class="sep">◆</span>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Trusted by 500+ Industries Worldwide
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-delay="0">Pioneering</span>
+        <span class="line gradient-text" data-delay="100">Advanced Chemistry</span>
+        <span class="line" data-delay="200">For Tomorrow</span>
+      </h1>
+      <p class="hero-subtitle" data-delay="400">
+        World-class manufacturer of water-based emulsions, pressure-sensitive adhesives,
+        and specialty surfactants. Serving 40+ countries with precision-engineered solutions.
+      </p>
+      <div class="hero-actions" data-delay="600">
+        <a href="#products" class="btn-primary hero-btn">
+          Explore Products
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M3 9h12M10 5l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#about" class="btn-outline">
+          Our Story
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="25">0</span><span>+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="40">0</span><span>+</span>
+          <p>Countries Served</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="120">0</span><span>+</span>
+          <p>Products Range</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Products Section -->
-<section class="products-section" id="products">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">Our Portfolio</span>
-      <h2 class="section-title">Markets & <span class="gradient-text">Products</span></h2>
-      <p class="section-subtitle">Advanced chemistry solutions engineered for performance, sustainability, and global industry standards.</p>
+    <div class="hero-visual">
+      <div class="molecule-wrapper">
+        <div class="mol-ring mol-ring-1"></div>
+        <div class="mol-ring mol-ring-2"></div>
+        <div class="mol-ring mol-ring-3"></div>
+        <div class="mol-center">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="20" fill="url(#mgrad)" />
+            <circle cx="60" cy="20" r="10" fill="#00d4ff" opacity="0.8" />
+            <circle cx="100" cy="60" r="10" fill="#7B2FFF" opacity="0.8" />
+            <circle cx="60" cy="100" r="10" fill="#00ffb3" opacity="0.8" />
+            <circle cx="20" cy="60" r="10" fill="#00d4ff" opacity="0.8" />
+            <line x1="60" y1="40" x2="60" y2="30" stroke="url(#lg3)" stroke-width="2" />
+            <line x1="80" y1="60" x2="90" y2="60" stroke="url(#lg3)" stroke-width="2" />
+            <line x1="60" y1="80" x2="60" y2="90" stroke="url(#lg3)" stroke-width="2" />
+            <line x1="40" y1="60" x2="30" y2="60" stroke="url(#lg3)" stroke-width="2" />
+            <defs>
+              <radialGradient id="mgrad">
+                <stop offset="0%" stop-color="#00d4ff" />
+                <stop offset="100%" stop-color="#7B2FFF" />
+              </radialGradient>
+              <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00d4ff" />
+                <stop offset="100%" stop-color="#00ffb3" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
     </div>
 
-    <div class="products-grid">
-      <div class="product-card reveal" data-delay="0">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">🎨</div>
-        </div>
-        <h3>Paints & Coatings Emulsions</h3>
-        <p>High-performance acrylic, styrene-acrylic, and VAM emulsions for interior and exterior coatings with superior durability.</p>
-        <ul class="product-features">
-          <li>Styrene Acrylic Emulsions</li>
-          <li>Pure Acrylic Emulsions</li>
-          <li>VAM Veova Emulsions</li>
-          <li>Dispersing Agents</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-      </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
 
-      <div class="product-card reveal" data-delay="100">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">🏗️</div>
-        </div>
-        <h3>Construction Chemicals</h3>
-        <p>Innovative polymer binders and admixtures that enhance concrete strength, adhesion, and longevity for modern infrastructure.</p>
-        <ul class="product-features">
-          <li>Polymer Binders</li>
-          <li>Tile Adhesive Polymers</li>
-          <li>Waterproofing Agents</li>
-          <li>Redispersible Powders</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-      </div>
-
-      <div class="product-card reveal" data-delay="200">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">🔗</div>
-        </div>
-        <h3>Pressure Sensitive Adhesives</h3>
-        <p>Custom-formulated PSA solutions for labels, tapes, and medical applications with exceptional tack and holding power.</p>
-        <ul class="product-features">
-          <li>Label Grade PSA</li>
-          <li>Tape Grade PSA</li>
-          <li>Medical Grade PSA</li>
-          <li>Removable PSA</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-      </div>
-
-      <div class="product-card reveal" data-delay="300">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">🧵</div>
-        </div>
-        <h3>Textile Emulsions & Binders</h3>
-        <p>Specialized polymer solutions for fabric finishing, pigment printing, and non-woven bonding applications in textile industry.</p>
-        <ul class="product-features">
-          <li>Pigment Binders</li>
-          <li>Softening Agents</li>
-          <li>Non-woven Binders</li>
-          <li>Crosslinking Agents</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-      </div>
-
-      <div class="product-card reveal" data-delay="100">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">⚗️</div>
-        </div>
-        <h3>PVA Emulsion Homopolymers</h3>
-        <p>Premium polyvinyl acetate emulsions for wood adhesives, paper lamination, and general-purpose bonding applications.</p>
-        <ul class="product-features">
-          <li>Wood Working Grade</li>
-          <li>Paper & Packaging Grade</li>
-          <li>General Purpose Grade</li>
-          <li>High Solids Grade</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-      </div>
-
-      <div class="product-card reveal" data-delay="200">
-        <div class="product-card-glow"></div>
-        <div class="product-icon">
-          <div class="icon-bg">✨</div>
-        </div>
-        <h3>Specialty Emulsions</h3>
-        <p>Niche polymer systems for demanding applications including automotive, leather, and advanced coating technologies.</p>
-        <ul class="product-features">
-          <li>Automotive Coatings</li>
-          <li>Leather Finishing</li>
-          <li>Floor Polishes</li>
-          <li>Release Coatings</li>
-        </ul>
-        <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+  <!-- Marquee Banner -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content" id="marquee-content">
+        <span>Paints & Coatings</span>
+        <span class="sep">◆</span>
+        <span>Pressure Sensitive Adhesives</span>
+        <span class="sep">◆</span>
+        <span>Construction Chemicals</span>
+        <span class="sep">◆</span>
+        <span>PVA Homopolymers</span>
+        <span class="sep">◆</span>
+        <span>Textile Emulsions</span>
+        <span class="sep">◆</span>
+        <span>Specialty Surfactants</span>
+        <span class="sep">◆</span>
+        <span>Styrene Acrylic</span>
+        <span class="sep">◆</span>
+        <span>Pure Acrylic Emulsions</span>
+        <span class="sep">◆</span>
+        <span>Paints & Coatings</span>
+        <span class="sep">◆</span>
+        <span>Pressure Sensitive Adhesives</span>
+        <span class="sep">◆</span>
+        <span>Construction Chemicals</span>
+        <span class="sep">◆</span>
+        <span>PVA Homopolymers</span>
+        <span class="sep">◆</span>
+        <span>Textile Emulsions</span>
+        <span class="sep">◆</span>
+        <span>Specialty Surfactants</span>
+        <span class="sep">◆</span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- About Section -->
-<section class="about-section" id="about">
-  <div class="about-bg-shape"></div>
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="about-img-wrapper">
-          <img src="about_section.png" alt="NexaBio Manufacturing Facility" class="about-img">
-          <div class="about-img-overlay"></div>
-        </div>
-        <div class="about-badge-float">
-          <div class="float-icon">🏆</div>
-          <div>
-            <strong>ISO 9001:2015</strong>
-            <span>Certified Quality</span>
-          </div>
-        </div>
-        <div class="about-badge-float2">
-          <div class="float-icon">🌍</div>
-          <div>
-            <strong>40+ Countries</strong>
-            <span>Global Exports</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-content">
-        <span class="section-tag reveal">Who We Are</span>
-        <h2 class="section-title reveal">Chemistry That <span class="gradient-text">Drives Industry</span> Forward</h2>
-        <p class="about-desc reveal">Founded with a vision of sustainable innovation, NexaBio Sciences has grown to become a trusted partner for industries worldwide. Our state-of-the-art manufacturing facilities produce premium water-based emulsions and adhesives that meet the highest global standards.</p>
-        
-        <div class="about-features">
-          <div class="about-feature reveal">
-            <div class="af-icon">🔬</div>
-            <div>
-              <h4>R&D Excellence</h4>
-              <p>In-house research labs with dedicated chemists innovating for tomorrow's challenges.</p>
-            </div>
-          </div>
-          <div class="about-feature reveal">
-            <div class="af-icon">🌿</div>
-            <div>
-              <h4>Green Chemistry</h4>
-              <p>Water-based, low-VOC formulations that protect the environment without compromising performance.</p>
-            </div>
-          </div>
-          <div class="about-feature reveal">
-            <div class="af-icon">🚀</div>
-            <div>
-              <h4>Custom Solutions</h4>
-              <p>Tailored polymer formulations designed to meet your exact application requirements.</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#contact" class="btn-primary reveal">Learn More About Us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Numbers Section -->
-<section class="numbers-section">
-  <div class="numbers-bg"></div>
-  <div class="container">
-    <div class="numbers-grid">
-      <div class="number-item reveal">
-        <div class="num-icon">🏭</div>
-        <span class="num-val" data-target="3">0</span><span class="num-suffix">+</span>
-        <p>Manufacturing Plants</p>
-      </div>
-      <div class="number-item reveal">
-        <div class="num-icon">🔬</div>
-        <span class="num-val" data-target="50">0</span><span class="num-suffix">+</span>
-        <p>R&D Scientists</p>
-      </div>
-      <div class="number-item reveal">
-        <div class="num-icon">📦</div>
-        <span class="num-val" data-target="10000">0</span><span class="num-suffix">+</span>
-        <p>MT Monthly Capacity</p>
-      </div>
-      <div class="number-item reveal">
-        <div class="num-icon">⭐</div>
-        <span class="num-val" data-target="99">0</span><span class="num-suffix">%</span>
-        <p>Customer Satisfaction</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Global Presence Section -->
-<section class="global-section" id="global">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">Worldwide</span>
-      <h2 class="section-title">Our <span class="gradient-text">Global Presence</span></h2>
-      <p class="section-subtitle">Delivering world-class chemical solutions across 40+ countries on 5 continents.</p>
-    </div>
-
-    <div class="global-map-wrapper reveal">
-      <div class="map-container">
-        <svg class="world-map" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Simplified world map paths -->
-          <rect width="900" height="500" rx="20" fill="rgba(0,212,255,0.03)"/>
-          <!-- Grid lines -->
-          <line x1="0" y1="125" x2="900" y2="125" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          <line x1="0" y1="250" x2="900" y2="250" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          <line x1="0" y1="375" x2="900" y2="375" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          <line x1="225" y1="0" x2="225" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          <line x1="450" y1="0" x2="450" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          <line x1="675" y1="0" x2="675" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
-          
-          <!-- Continent blobs (simplified) -->
-          <!-- North America -->
-          <ellipse cx="180" cy="180" rx="120" ry="100" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-          <!-- South America -->
-          <ellipse cx="240" cy="340" rx="70" ry="90" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-          <!-- Europe -->
-          <ellipse cx="460" cy="140" rx="60" ry="60" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-          <!-- Africa -->
-          <ellipse cx="480" cy="310" rx="70" ry="100" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-          <!-- Asia -->
-          <ellipse cx="660" cy="200" rx="150" ry="120" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-          <!-- Australia -->
-          <ellipse cx="740" cy="370" rx="70" ry="50" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
-
-          <!-- Market presence dots with pulses -->
-          <!-- India (HQ) -->
-          <circle cx="650" cy="235" r="8" fill="#00d4ff" opacity="0.9"/>
-          <circle cx="650" cy="235" r="16" fill="rgba(0,212,255,0.3)" class="pulse-dot"/>
-          <text x="665" y="225" fill="#00d4ff" font-size="11" font-family="Outfit">India (HQ)</text>
-          
-          <!-- UAE -->
-          <circle cx="590" cy="220" r="6" fill="#7B2FFF" opacity="0.9"/>
-          <circle cx="590" cy="220" r="12" fill="rgba(123,47,255,0.3)" class="pulse-dot"/>
-          
-          <!-- Saudi Arabia -->
-          <circle cx="570" cy="240" r="6" fill="#7B2FFF" opacity="0.9"/>
-          
-          <!-- USA -->
-          <circle cx="180" cy="185" r="6" fill="#00ffb3" opacity="0.9"/>
-          <circle cx="180" cy="185" r="12" fill="rgba(0,255,179,0.3)" class="pulse-dot"/>
-          
-          <!-- Nigeria -->
-          <circle cx="455" cy="290" r="6" fill="#00ffb3" opacity="0.9"/>
-          
-          <!-- Kenya -->
-          <circle cx="510" cy="310" r="5" fill="#00d4ff" opacity="0.8"/>
-          
-          <!-- Malaysia -->
-          <circle cx="710" cy="290" r="6" fill="#7B2FFF" opacity="0.9"/>
-          
-          <!-- Indonesia -->
-          <circle cx="735" cy="305" r="5" fill="#00d4ff" opacity="0.8"/>
-          
-          <!-- Australia -->
-          <circle cx="750" cy="370" r="6" fill="#00ffb3" opacity="0.9"/>
-          
-          <!-- Bangladesh -->
-          <circle cx="675" cy="230" r="5" fill="#00ffb3" opacity="0.8"/>
-          
-          <!-- Egypt -->
-          <circle cx="510" cy="230" r="5" fill="#00d4ff" opacity="0.8"/>
-
-          <!-- Connection lines -->
-          <line x1="650" y1="235" x2="590" y2="220" stroke="rgba(0,212,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
-          <line x1="650" y1="235" x2="710" y2="290" stroke="rgba(0,212,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
-          <line x1="650" y1="235" x2="510" y2="310" stroke="rgba(0,212,255,0.2)" stroke-width="1" stroke-dasharray="4,4"/>
-          <line x1="650" y1="235" x2="180" y2="185" stroke="rgba(0,255,179,0.2)" stroke-width="1" stroke-dasharray="4,4"/>
-        </svg>
-      </div>
-
-      <div class="region-list">
-        <div class="region-card">
-          <div class="region-flag">🌏</div>
-          <div>
-            <strong>Asia Pacific</strong>
-            <span>India, Malaysia, Indonesia, Bangladesh, Vietnam, Sri Lanka</span>
-          </div>
-        </div>
-        <div class="region-card">
-          <div class="region-flag">🌍</div>
-          <div>
-            <strong>Middle East & Africa</strong>
-            <span>UAE, Saudi Arabia, Kuwait, Qatar, Nigeria, Kenya, Ethiopia</span>
-          </div>
-        </div>
-        <div class="region-card">
-          <div class="region-flag">🌎</div>
-          <div>
-            <strong>Americas & Europe</strong>
-            <span>USA, UK, Australia, and growing European partnerships</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sustainability Section -->
-<section class="sustainability-section" id="sustainability">
-  <div class="container">
-    <div class="sust-grid">
-      <div class="sust-content">
-        <span class="section-tag reveal">Our Commitment</span>
-        <h2 class="section-title reveal">Building a <span class="gradient-text">Greener Future</span></h2>
-        <p class="sust-desc reveal">At NexaBio Sciences, sustainability isn't just a goal — it's the foundation of every formulation we create. We're committed to reducing our environmental footprint while delivering superior chemical performance.</p>
-
-        <div class="sust-pillars">
-          <div class="pillar reveal">
-            <div class="pillar-icon green">🌱</div>
-            <div class="pillar-info">
-              <h4>Zero-VOC Formulations</h4>
-              <p>100% water-based products eliminating harmful volatile compounds from industrial processes.</p>
-            </div>
-          </div>
-          <div class="pillar reveal">
-            <div class="pillar-icon blue">💧</div>
-            <div class="pillar-info">
-              <h4>Water Conservation</h4>
-              <p>Closed-loop water recycling systems reducing freshwater consumption by 60%.</p>
-            </div>
-          </div>
-          <div class="pillar reveal">
-            <div class="pillar-icon purple">⚡</div>
-            <div class="pillar-info">
-              <h4>Renewable Energy</h4>
-              <p>Solar-powered manufacturing with 40% renewable energy across all facilities.</p>
-            </div>
-          </div>
-          <div class="pillar reveal">
-            <div class="pillar-icon teal">♻️</div>
-            <div class="pillar-info">
-              <h4>Circular Economy</h4>
-              <p>Zero-waste manufacturing commitment with 95% industrial byproduct recycling.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sust-visual reveal">
-        <img src="sustainability_image.png" alt="Sustainability at NexaBio" class="sust-img">
-        <div class="sust-overlay"></div>
-        <div class="sust-stat-card">
-          <div class="sst-row">
-            <div class="sst-item">
-              <span>60%</span>
-              <p>Water Saved</p>
-            </div>
-            <div class="sst-item">
-              <span>40%</span>
-              <p>Renewable Energy</p>
-            </div>
-          </div>
-          <div class="sst-row">
-            <div class="sst-item">
-              <span>0 VOC</span>
-              <p>Water-Based Products</p>
-            </div>
-            <div class="sst-item">
-              <span>95%</span>
-              <p>Waste Recycled</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials Section -->
-<section class="testimonials-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">Client Stories</span>
-      <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
-    </div>
-
-    <div class="testimonials-slider">
-      <div class="testimonial-card active reveal">
-        <div class="quote-icon">"</div>
-        <p class="testimonial-text">NexaBio Sciences has been an exceptional partner for our paint manufacturing operations. Their acrylic emulsions consistently deliver outstanding film formation and durability. Highly recommended for any serious coatings manufacturer.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">RK</div>
-          <div>
-            <strong>Rajesh Kumar</strong>
-            <span>Head of Procurement, StellarCoat Industries</span>
-          </div>
-          <div class="stars">★★★★★</div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal">
-        <div class="quote-icon">"</div>
-        <p class="testimonial-text">Their PSA products are exactly what we needed for our label manufacturing business. Excellent initial tack, clean release, and unmatched consistency batch after batch. Their technical support team is always responsive and knowledgeable.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">AL</div>
-          <div>
-            <strong>Ahmed Al-Mansouri</strong>
-            <span>Operations Director, GulfPak Labels, UAE</span>
-          </div>
-          <div class="stars">★★★★★</div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal">
-        <div class="quote-icon">"</div>
-        <p class="testimonial-text">We switched to NexaBio's construction chemical binders three years ago and have seen measurable improvements in our tile adhesive performance. The eco-friendly, water-based formulations align perfectly with our sustainability goals.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">PO</div>
-          <div>
-            <strong>Patrick Omondi</strong>
-            <span>Technical Manager, BuildRight Kenya</span>
-          </div>
-          <div class="stars">★★★★★</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider-controls">
-      <button class="slider-btn" id="prev-btn" onclick="changeSlide(-1)">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 5l-5 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-      <div class="slider-dots">
-        <span class="dot active" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
-      </div>
-      <button class="slider-btn" id="next-btn" onclick="changeSlide(1)">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <span class="section-tag reveal">Get In Touch</span>
-        <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
-        <p class="contact-desc reveal">Ready to explore how NexaBio Sciences can solve your chemical formulation challenges? Reach out to our expert team.</p>
-
-        <div class="contact-details">
-          <div class="contact-item reveal">
-            <div class="contact-icon">📧</div>
-            <div>
-              <strong>Email Us</strong>
-              <a href="mailto:sales@nexabiosciences.com">sales@nexabiosciences.com</a>
-            </div>
-          </div>
-          <div class="contact-item reveal">
-            <div class="contact-icon">📞</div>
-            <div>
-              <strong>Call Us</strong>
-              <a href="tel:+917069479522">+91 706 947 9522</a>
-            </div>
-          </div>
-          <div class="contact-item reveal">
-            <div class="contact-icon">📍</div>
-            <div>
-              <strong>Headquarters</strong>
-              <span>Ahmedabad, Gujarat, India - 382445</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-form-wrapper reveal">
-        <form class="contact-form" id="contact-form">
-          <h3>Send Us a Message</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="John Smith" required>
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" id="company" placeholder="Your Company">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="john@company.com" required>
-          </div>
-          <div class="form-group">
-            <label for="product-interest">Product Interest</label>
-            <select id="product-interest">
-              <option value="">Select a category...</option>
-              <option>Paints & Coatings Emulsions</option>
-              <option>Construction Chemicals</option>
-              <option>Pressure Sensitive Adhesives</option>
-              <option>Textile Emulsions</option>
-              <option>PVA Homopolymers</option>
-              <option>Specialty Emulsions</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary form-submit">
-            Send Message
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9l14 0M10 3l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <p class="form-success" id="form-success">✅ Message sent! We'll be in touch within 24 hours.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-top">
+  <!-- Products Section -->
+  <section class="products-section" id="products">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="nav-logo footer-logo">
-            <div class="logo-icon">
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="6" fill="url(#flg1)"/>
-                <circle cx="8" cy="8" r="3" fill="url(#flg2)" opacity="0.7"/>
-                <circle cx="24" cy="8" r="3" fill="url(#flg2)" opacity="0.7"/>
-                <circle cx="8" cy="24" r="3" fill="url(#flg2)" opacity="0.7"/>
-                <circle cx="24" cy="24" r="3" fill="url(#flg2)" opacity="0.7"/>
-                <defs>
-                  <linearGradient id="flg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7B2FFF"/></linearGradient>
-                  <linearGradient id="flg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#00ffb3"/></linearGradient>
-                </defs>
+      <div class="section-header reveal">
+        <span class="section-tag">Our Portfolio</span>
+        <h2 class="section-title">Markets & <span class="gradient-text">Products</span></h2>
+        <p class="section-subtitle">Advanced chemistry solutions engineered for performance, sustainability, and global
+          industry standards.</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card reveal" data-delay="0">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">🎨</div>
+          </div>
+          <h3>Paints & Coatings Emulsions</h3>
+          <p>High-performance acrylic, styrene-acrylic, and VAM emulsions for interior and exterior coatings with
+            superior durability.</p>
+          <ul class="product-features">
+            <li>Styrene Acrylic Emulsions</li>
+            <li>Pure Acrylic Emulsions</li>
+            <li>VAM Veova Emulsions</li>
+            <li>Dispersing Agents</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+
+        <div class="product-card reveal" data-delay="100">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">🏗️</div>
+          </div>
+          <h3>Construction Chemicals</h3>
+          <p>Innovative polymer binders and admixtures that enhance concrete strength, adhesion, and longevity for
+            modern infrastructure.</p>
+          <ul class="product-features">
+            <li>Polymer Binders</li>
+            <li>Tile Adhesive Polymers</li>
+            <li>Waterproofing Agents</li>
+            <li>Redispersible Powders</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+
+        <div class="product-card reveal" data-delay="200">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">🔗</div>
+          </div>
+          <h3>Pressure Sensitive Adhesives</h3>
+          <p>Custom-formulated PSA solutions for labels, tapes, and medical applications with exceptional tack and
+            holding power.</p>
+          <ul class="product-features">
+            <li>Label Grade PSA</li>
+            <li>Tape Grade PSA</li>
+            <li>Medical Grade PSA</li>
+            <li>Removable PSA</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+
+        <div class="product-card reveal" data-delay="300">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">🧵</div>
+          </div>
+          <h3>Textile Emulsions & Binders</h3>
+          <p>Specialized polymer solutions for fabric finishing, pigment printing, and non-woven bonding applications in
+            textile industry.</p>
+          <ul class="product-features">
+            <li>Pigment Binders</li>
+            <li>Softening Agents</li>
+            <li>Non-woven Binders</li>
+            <li>Crosslinking Agents</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+
+        <div class="product-card reveal" data-delay="100">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">⚗️</div>
+          </div>
+          <h3>PVA Emulsion Homopolymers</h3>
+          <p>Premium polyvinyl acetate emulsions for wood adhesives, paper lamination, and general-purpose bonding
+            applications.</p>
+          <ul class="product-features">
+            <li>Wood Working Grade</li>
+            <li>Paper & Packaging Grade</li>
+            <li>General Purpose Grade</li>
+            <li>High Solids Grade</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+
+        <div class="product-card reveal" data-delay="200">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <div class="icon-bg">✨</div>
+          </div>
+          <h3>Specialty Emulsions</h3>
+          <p>Niche polymer systems for demanding applications including automotive, leather, and advanced coating
+            technologies.</p>
+          <ul class="product-features">
+            <li>Automotive Coatings</li>
+            <li>Leather Finishing</li>
+            <li>Floor Polishes</li>
+            <li>Release Coatings</li>
+          </ul>
+          <a href="#" class="product-link">Explore Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-bg-shape"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrapper">
+            <img src="about_section.png" alt="NexaBio Manufacturing Facility" class="about-img">
+            <div class="about-img-overlay"></div>
+          </div>
+          <div class="about-badge-float">
+            <div class="float-icon">🏆</div>
+            <div>
+              <strong>ISO 9001:2015</strong>
+              <span>Certified Quality</span>
+            </div>
+          </div>
+          <div class="about-badge-float2">
+            <div class="float-icon">🌍</div>
+            <div>
+              <strong>40+ Countries</strong>
+              <span>Global Exports</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag reveal">Who We Are</span>
+          <h2 class="section-title reveal">Chemistry That <span class="gradient-text">Drives Industry</span> Forward
+          </h2>
+          <p class="about-desc reveal">Founded with a vision of sustainable innovation, NexaBio Sciences has grown to
+            become a trusted partner for industries worldwide. Our state-of-the-art manufacturing facilities produce
+            premium water-based emulsions and adhesives that meet the highest global standards.</p>
+
+          <div class="about-features">
+            <div class="about-feature reveal">
+              <div class="af-icon">🔬</div>
+              <div>
+                <h4>R&D Excellence</h4>
+                <p>In-house research labs with dedicated chemists innovating for tomorrow's challenges.</p>
+              </div>
+            </div>
+            <div class="about-feature reveal">
+              <div class="af-icon">🌿</div>
+              <div>
+                <h4>Green Chemistry</h4>
+                <p>Water-based, low-VOC formulations that protect the environment without compromising performance.</p>
+              </div>
+            </div>
+            <div class="about-feature reveal">
+              <div class="af-icon">🚀</div>
+              <div>
+                <h4>Custom Solutions</h4>
+                <p>Tailored polymer formulations designed to meet your exact application requirements.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary reveal">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Numbers Section -->
+  <section class="numbers-section">
+    <div class="numbers-bg"></div>
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="number-item reveal">
+          <div class="num-icon">🏭</div>
+          <span class="num-val" data-target="3">0</span><span class="num-suffix">+</span>
+          <p>Manufacturing Plants</p>
+        </div>
+        <div class="number-item reveal">
+          <div class="num-icon">🔬</div>
+          <span class="num-val" data-target="50">0</span><span class="num-suffix">+</span>
+          <p>R&D Scientists</p>
+        </div>
+        <div class="number-item reveal">
+          <div class="num-icon">📦</div>
+          <span class="num-val" data-target="10000">0</span><span class="num-suffix">+</span>
+          <p>MT Monthly Capacity</p>
+        </div>
+        <div class="number-item reveal">
+          <div class="num-icon">⭐</div>
+          <span class="num-val" data-target="99">0</span><span class="num-suffix">%</span>
+          <p>Customer Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Presence Section -->
+  <section class="global-section" id="global">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Worldwide</span>
+        <h2 class="section-title">Our <span class="gradient-text">Global Presence</span></h2>
+        <p class="section-subtitle">Delivering world-class chemical solutions across 40+ countries on 5 continents.</p>
+      </div>
+
+      <div class="global-map-wrapper reveal">
+        <div class="map-container">
+          <svg class="world-map" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Simplified world map paths -->
+            <rect width="900" height="500" rx="20" fill="rgba(0,212,255,0.03)" />
+            <!-- Grid lines -->
+            <line x1="0" y1="125" x2="900" y2="125" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+            <line x1="0" y1="250" x2="900" y2="250" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+            <line x1="0" y1="375" x2="900" y2="375" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+            <line x1="225" y1="0" x2="225" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+            <line x1="450" y1="0" x2="450" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+            <line x1="675" y1="0" x2="675" y2="500" stroke="rgba(0,212,255,0.1)" stroke-width="1" />
+
+            <!-- Continent blobs (simplified) -->
+            <!-- North America -->
+            <ellipse cx="180" cy="180" rx="120" ry="100" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+            <!-- South America -->
+            <ellipse cx="240" cy="340" rx="70" ry="90" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+            <!-- Europe -->
+            <ellipse cx="460" cy="140" rx="60" ry="60" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+            <!-- Africa -->
+            <ellipse cx="480" cy="310" rx="70" ry="100" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+            <!-- Asia -->
+            <ellipse cx="660" cy="200" rx="150" ry="120" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+            <!-- Australia -->
+            <ellipse cx="740" cy="370" rx="70" ry="50" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)"
+              stroke-width="1" />
+
+            <!-- Market presence dots with pulses -->
+            <!-- India (HQ) -->
+            <circle cx="650" cy="235" r="8" fill="#00d4ff" opacity="0.9" />
+            <circle cx="650" cy="235" r="16" fill="rgba(0,212,255,0.3)" class="pulse-dot" />
+            <text x="665" y="225" fill="#00d4ff" font-size="11" font-family="Outfit">India (HQ)</text>
+
+            <!-- UAE -->
+            <circle cx="590" cy="220" r="6" fill="#7B2FFF" opacity="0.9" />
+            <circle cx="590" cy="220" r="12" fill="rgba(123,47,255,0.3)" class="pulse-dot" />
+
+            <!-- Saudi Arabia -->
+            <circle cx="570" cy="240" r="6" fill="#7B2FFF" opacity="0.9" />
+
+            <!-- USA -->
+            <circle cx="180" cy="185" r="6" fill="#00ffb3" opacity="0.9" />
+            <circle cx="180" cy="185" r="12" fill="rgba(0,255,179,0.3)" class="pulse-dot" />
+
+            <!-- Nigeria -->
+            <circle cx="455" cy="290" r="6" fill="#00ffb3" opacity="0.9" />
+
+            <!-- Kenya -->
+            <circle cx="510" cy="310" r="5" fill="#00d4ff" opacity="0.8" />
+
+            <!-- Malaysia -->
+            <circle cx="710" cy="290" r="6" fill="#7B2FFF" opacity="0.9" />
+
+            <!-- Indonesia -->
+            <circle cx="735" cy="305" r="5" fill="#00d4ff" opacity="0.8" />
+
+            <!-- Australia -->
+            <circle cx="750" cy="370" r="6" fill="#00ffb3" opacity="0.9" />
+
+            <!-- Bangladesh -->
+            <circle cx="675" cy="230" r="5" fill="#00ffb3" opacity="0.8" />
+
+            <!-- Egypt -->
+            <circle cx="510" cy="230" r="5" fill="#00d4ff" opacity="0.8" />
+
+            <!-- Connection lines -->
+            <line x1="650" y1="235" x2="590" y2="220" stroke="rgba(0,212,255,0.3)" stroke-width="1"
+              stroke-dasharray="4,4" />
+            <line x1="650" y1="235" x2="710" y2="290" stroke="rgba(0,212,255,0.3)" stroke-width="1"
+              stroke-dasharray="4,4" />
+            <line x1="650" y1="235" x2="510" y2="310" stroke="rgba(0,212,255,0.2)" stroke-width="1"
+              stroke-dasharray="4,4" />
+            <line x1="650" y1="235" x2="180" y2="185" stroke="rgba(0,255,179,0.2)" stroke-width="1"
+              stroke-dasharray="4,4" />
+          </svg>
+        </div>
+
+        <div class="region-list">
+          <div class="region-card">
+            <div class="region-flag">🌏</div>
+            <div>
+              <strong>Asia Pacific</strong>
+              <span>India, Malaysia, Indonesia, Bangladesh, Vietnam, Sri Lanka</span>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-flag">🌍</div>
+            <div>
+              <strong>Middle East & Africa</strong>
+              <span>UAE, Saudi Arabia, Kuwait, Qatar, Nigeria, Kenya, Ethiopia</span>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-flag">🌎</div>
+            <div>
+              <strong>Americas & Europe</strong>
+              <span>USA, UK, Australia, and growing European partnerships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section class="sustainability-section" id="sustainability">
+    <div class="container">
+      <div class="sust-grid">
+        <div class="sust-content">
+          <span class="section-tag reveal">Our Commitment</span>
+          <h2 class="section-title reveal">Building a <span class="gradient-text">Greener Future</span></h2>
+          <p class="sust-desc reveal">At NexaBio Sciences, sustainability isn't just a goal — it's the foundation of
+            every formulation we create. We're committed to reducing our environmental footprint while delivering
+            superior chemical performance.</p>
+
+          <div class="sust-pillars">
+            <div class="pillar reveal">
+              <div class="pillar-icon green">🌱</div>
+              <div class="pillar-info">
+                <h4>Zero-VOC Formulations</h4>
+                <p>100% water-based products eliminating harmful volatile compounds from industrial processes.</p>
+              </div>
+            </div>
+            <div class="pillar reveal">
+              <div class="pillar-icon blue">💧</div>
+              <div class="pillar-info">
+                <h4>Water Conservation</h4>
+                <p>Closed-loop water recycling systems reducing freshwater consumption by 60%.</p>
+              </div>
+            </div>
+            <div class="pillar reveal">
+              <div class="pillar-icon purple">⚡</div>
+              <div class="pillar-info">
+                <h4>Renewable Energy</h4>
+                <p>Solar-powered manufacturing with 40% renewable energy across all facilities.</p>
+              </div>
+            </div>
+            <div class="pillar reveal">
+              <div class="pillar-icon teal">♻️</div>
+              <div class="pillar-info">
+                <h4>Circular Economy</h4>
+                <p>Zero-waste manufacturing commitment with 95% industrial byproduct recycling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sust-visual reveal">
+          <img src="sustainability_image.png" alt="Sustainability at NexaBio" class="sust-img">
+          <div class="sust-overlay"></div>
+          <div class="sust-stat-card">
+            <div class="sst-row">
+              <div class="sst-item">
+                <span>60%</span>
+                <p>Water Saved</p>
+              </div>
+              <div class="sst-item">
+                <span>40%</span>
+                <p>Renewable Energy</p>
+              </div>
+            </div>
+            <div class="sst-row">
+              <div class="sst-item">
+                <span>0 VOC</span>
+                <p>Water-Based Products</p>
+              </div>
+              <div class="sst-item">
+                <span>95%</span>
+                <p>Waste Recycled</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Client Stories</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonial-card active reveal">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">NexaBio Sciences has been an exceptional partner for our paint manufacturing
+            operations. Their acrylic emulsions consistently deliver outstanding film formation and durability. Highly
+            recommended for any serious coatings manufacturer.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <strong>Rajesh Kumar</strong>
+              <span>Head of Procurement, StellarCoat Industries</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">Their PSA products are exactly what we needed for our label manufacturing
+            business. Excellent initial tack, clean release, and unmatched consistency batch after batch. Their
+            technical support team is always responsive and knowledgeable.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <strong>Ahmed Al-Mansouri</strong>
+              <span>Operations Director, GulfPak Labels, UAE</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">We switched to NexaBio's construction chemical binders three years ago and have
+            seen measurable improvements in our tile adhesive performance. The eco-friendly, water-based formulations
+            align perfectly with our sustainability goals.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PO</div>
+            <div>
+              <strong>Patrick Omondi</strong>
+              <span>Technical Manager, BuildRight Kenya</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="prev-btn" onclick="changeSlide(-1)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M13 5l-5 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="slider-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+        <button class="slider-btn" id="next-btn" onclick="changeSlide(1)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag reveal">Get In Touch</span>
+          <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="contact-desc reveal">Ready to explore how NexaBio Sciences can solve your chemical formulation
+            challenges? Reach out to our expert team.</p>
+
+          <div class="contact-details">
+            <div class="contact-item reveal">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email Us</strong>
+                <a href="mailto:sales@VARAA CARES.com">sales@VARAA CARES.com</a>
+              </div>
+            </div>
+            <div class="contact-item reveal">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Call Us</strong>
+                <a href="tel:+917069479522">+91 706 947 9522</a>
+              </div>
+            </div>
+            <div class="contact-item reveal">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Headquarters</strong>
+                <span>Ahmedabad, Gujarat, India - 382445</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contact-form">
+            <h3>Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Your Company">
+              </div>
             </div>
-            <span>NexaBio<strong>Sciences</strong></span>
-          </a>
-          <p class="footer-tagline">Pioneering advanced chemistry solutions for a sustainable industrial future. Trusted globally since 1999.</p>
-          <div class="footer-certifications">
-            <span class="cert-badge">ISO 9001:2015</span>
-            <span class="cert-badge">ISO 14001</span>
-            <span class="cert-badge">REACH Compliant</span>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="product-interest">Product Interest</label>
+              <select id="product-interest">
+                <option value="">Select a category...</option>
+                <option>Paints & Coatings Emulsions</option>
+                <option>Construction Chemicals</option>
+                <option>Pressure Sensitive Adhesives</option>
+                <option>Textile Emulsions</option>
+                <option>PVA Homopolymers</option>
+                <option>Specialty Emulsions</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M2 9l14 0M10 3l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <p class="form-success" id="form-success">✅ Message sent! We'll be in touch within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="6" fill="url(#flg1)" />
+                  <circle cx="8" cy="8" r="3" fill="url(#flg2)" opacity="0.7" />
+                  <circle cx="24" cy="8" r="3" fill="url(#flg2)" opacity="0.7" />
+                  <circle cx="8" cy="24" r="3" fill="url(#flg2)" opacity="0.7" />
+                  <circle cx="24" cy="24" r="3" fill="url(#flg2)" opacity="0.7" />
+                  <defs>
+                    <linearGradient id="flg1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#00d4ff" />
+                      <stop offset="100%" stop-color="#7B2FFF" />
+                    </linearGradient>
+                    <linearGradient id="flg2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#00d4ff" />
+                      <stop offset="100%" stop-color="#00ffb3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span>NexaBio<strong>Sciences</strong></span>
+            </a>
+            <p class="footer-tagline">Pioneering advanced chemistry solutions for a sustainable industrial future.
+              Trusted globally since 1999.</p>
+            <div class="footer-certifications">
+              <span class="cert-badge">ISO 9001:2015</span>
+              <span class="cert-badge">ISO 14001</span>
+              <span class="cert-badge">REACH Compliant</span>
+            </div>
           </div>
-        </div>
 
-        <div class="footer-links-col">
-          <h4>Products</h4>
-          <ul>
-            <li><a href="#">Paints & Coatings Emulsions</a></li>
-            <li><a href="#">Construction Chemicals</a></li>
-            <li><a href="#">Pressure Sensitive Adhesives</a></li>
-            <li><a href="#">Textile Emulsions</a></li>
-            <li><a href="#">PVA Homopolymers</a></li>
-            <li><a href="#">Specialty Emulsions</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#sustainability">Sustainability</a></li>
-            <li><a href="#global">Global Presence</a></li>
-            <li><a href="#">News & Events</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4>Contact</h4>
-          <div class="footer-contact">
-            <p>📧 <a href="mailto:sales@nexabiosciences.com">sales@nexabiosciences.com</a></p>
-            <p>📞 <a href="tel:+917069479522">+91 706 947 9522</a></p>
-            <p>📍 Ahmedabad, Gujarat, India</p>
+          <div class="footer-links-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#">Paints & Coatings Emulsions</a></li>
+              <li><a href="#">Construction Chemicals</a></li>
+              <li><a href="#">Pressure Sensitive Adhesives</a></li>
+              <li><a href="#">Textile Emulsions</a></li>
+              <li><a href="#">PVA Homopolymers</a></li>
+              <li><a href="#">Specialty Emulsions</a></li>
+            </ul>
           </div>
-          <div class="footer-newsletter">
-            <h5>Stay Updated</h5>
-            <form class="newsletter-form" id="newsletter-form">
-              <input type="email" placeholder="Your email address" id="newsletter-email">
-              <button type="submit">→</button>
-            </form>
+
+          <div class="footer-links-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#sustainability">Sustainability</a></li>
+              <li><a href="#global">Global Presence</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <p>📧 <a href="mailto:sales@VARAA CARES.com">sales@VARAA CARES.com</a></p>
+              <p>📞 <a href="tel:+917069479522">+91 706 947 9522</a></p>
+              <p>📍 Ahmedabad, Gujarat, India</p>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Stay Updated</h5>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" id="newsletter-email">
+                <button type="submit">→</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container">
-      <p>© 2024 NexaBio Sciences Pvt. Ltd. All Rights Reserved.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Cookie Policy</a>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 NexaBio Sciences Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- WhatsApp Float -->
-<a href="https://wa.me/917069479522" class="whatsapp-float" target="_blank" id="whatsapp-btn" aria-label="WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/917069479522" class="whatsapp-float" target="_blank" id="whatsapp-btn" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
 
-<!-- Back to Top -->
-<button class="back-to-top" id="back-to-top" aria-label="Back to top">
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 13l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-</button>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M5 13l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
