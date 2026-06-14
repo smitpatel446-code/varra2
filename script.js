@@ -1,5 +1,5 @@
 /* ============================================
-   NexaBio Sciences — JavaScript
+   VARAA CARES — JavaScript
    Advanced Interactions & Motion Graphics
    ============================================ */
 
@@ -64,14 +64,14 @@ function initCursor() {
       cursor.style.height = '20px';
       follower.style.width = '56px';
       follower.style.height = '56px';
-      follower.style.borderColor = 'rgba(0,212,255,0.7)';
+      follower.style.borderColor = 'rgba(34,197,94,0.7)';
     });
     el.addEventListener('mouseleave', () => {
       cursor.style.width = '12px';
       cursor.style.height = '12px';
       follower.style.width = '36px';
       follower.style.height = '36px';
-      follower.style.borderColor = 'rgba(0,212,255,0.5)';
+      follower.style.borderColor = 'rgba(34,197,94,0.5)';
     });
   });
 
@@ -106,7 +106,7 @@ function initParticles() {
   });
 
   // Colors matching theme
-  const colors = ['rgba(0,212,255,', 'rgba(123,47,255,', 'rgba(0,255,179,'];
+  const colors = ['rgba(34,197,94,', 'rgba(163,230,53,', 'rgba(74,222,128,'];
 
   for (let i = 0; i < PARTICLE_COUNT; i++) {
     const colorBase = colors[Math.floor(Math.random() * colors.length)];
@@ -589,6 +589,6 @@ function initAll() {
     }
   });
 
-  console.log('%cNexaBio Sciences — Premium Website Initialized ✓', 
-    'color: #00d4ff; font-size: 14px; font-weight: bold; padding: 4px;');
+  console.log('%cVARAA CARES — Premium Website Initialized ✓', 
+    'color: #22c55e; font-size: 14px; font-weight: bold; padding: 4px;');
 }
